@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="kali配置, Niko blog">
+    <meta name="keywords" content="基础知识 一, Niko blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>kali配置 | Niko blog</title>
+    <title>基础知识 一 | Niko blog</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -261,12 +261,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">kali配置</h1>
+                    <h1 class="description center-align post-title">基础知识 一</h1>
                 </div>
             </div>
         </div>
@@ -382,8 +382,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/kali/">
-                                <span class="chip bg-color">kali</span>
+                            <a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
+                                <span class="chip bg-color">基础知识</span>
                             </a>
                         
                     </div>
@@ -394,8 +394,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/kali/" class="post-category">
-                                kali
+                            <a href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="post-category">
+                                基础知识
                             </a>
                         
                     </div>
@@ -421,14 +421,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.7k
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    8 分
+                    5 分
                 </div>
                 
 
@@ -451,216 +451,77 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="kali-配置"><a href="#kali-配置" class="headerlink" title="kali 配置"></a>kali 配置</h1><hr>
-<h3 id="新-kali-配置"><a href="#新-kali-配置" class="headerlink" title="新 kali 配置"></a>新 kali 配置</h3><pre class="line-numbers language-none"><code class="language-none"># 创建root账户：sudo passwd root
+                <h1 id="基础知识-一"><a href="#基础知识-一" class="headerlink" title="基础知识 一"></a>基础知识 一</h1><hr>
+<h2 id="什么是HTTP请求"><a href="#什么是HTTP请求" class="headerlink" title="什么是HTTP请求"></a>什么是HTTP请求</h2><pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">HTTP协议（Hyper Text Transfer Protocol，超文本传输协议）是用于从WWW服务器传输文本到本地浏览器的传输协议。
+它可以使浏览器更加高效，使网络传输减少。它不仅保证计算机正确快速地传输超文本文档，嗐确定传输文档中的哪一部分，
+以及那部分内容首先显示（如文本先于图像）等。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-# 安装渗透所有黑客工具：sudo apt-get -y install kali-linux-everything
+<h3 id="常见的请求"><a href="#常见的请求" class="headerlink" title="常见的请求"></a>常见的请求</h3><h4 id="GET-请求"><a href="#GET-请求" class="headerlink" title="GET 请求"></a>GET 请求</h4><p>​        最常见的一种请求方式，当客户端要从服务器中读取文档时，当点击网页上的链接或者通过在浏览器的地址栏输入网址来浏览网页的，使用的都是GET方式。GET方法要求服务器将URL定位的资源放在响应报文的数据部分，回送给客户端。使用GET方法时，请求参数和对应的值附加在URL后面，利用一个问号（“?”）代表URL的结尾与请求参数的开始，传递参数长度受限制。例如，/index.jsp?id=100&amp;op=bind,这样通过GET方式传递的数据直接表示在地址中，所以我们可以把请求结果以链接的形式发送给好友。以用google搜索domety为例，Request格式如下：</p>
+<pre class="line-numbers language-http" data-language="http"><code class="language-http"><span class="token request-line"><span class="token method property">GET</span> <span class="token request-target url">/search?hl=zh-CN&amp;source=hp&amp;q=domety&amp;aq=f&amp;oq=</span> <span class="token http-version property">HTTP/1.1</span></span>    
+<span class="token header-name keyword">Accept:</span> image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/vnd.ms-excel, application/vnd.ms-powerpoint,   
+application/msword, application/x-silverlight, application/x-shockwave-flash, */*    
+<span class="token header-name keyword">Referer:</span> &lt;a href="http://www.google.cn/">http://www.google.cn/&lt;/a>    
+<span class="token header-name keyword">Accept-Language:</span> zh-cn    
+<span class="token header-name keyword">Accept-Encoding:</span> gzip, deflate    
+<span class="token header-name keyword">User-Agent:</span> Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; TheWorld)    
+<span class="token header-name keyword">Host:</span> &lt;a href="http://www.google.cn">www.google.cn&lt;/a>    
+<span class="token header-name keyword">Connection:</span> Keep-Alive    
+<span class="token header-name keyword">Cookie:</span> PREF=ID=80a06da87be9ae3c:U=f7167333e2c3b714:NW=1:TM=1261551909:LM=1261551917:S=ybYcq2wpfefs4V9g;   
+NID=31=ojj8d-IygaEtSxLgaJmqSjVhCspkviJrB6omjamNrSm8lZhKy_yMfO2M4QMRKcH1g0iQv9u-2hfBW7bUFwVh7pGaRUb0RnHcJU37y-  
+FxlRugatx63JLv7CWMD6UB_O_r  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-# 修改源地址：
-cat &#x2F;etc&#x2F;apt&#x2F;sources.list
-或
-leafpad &#x2F;etc&#x2F;apt&#x2F;sources.list
+<h4 id="POST-请求"><a href="#POST-请求" class="headerlink" title="POST 请求"></a>POST 请求</h4><p>​        对于上面提到的不适合使用GET方式的情况，可以考虑使用POST方式，因为使用POST方法可以允许客户端给服务器提供信息较多。POST方法将请求参数封装在HTTP请求数据中，以名称/值的形式出现，可以传输大量数据，这样POST方式对传送的数据大小没有限制，而且也不会显示在URL中。还以上面的搜索domety为例，如果使用POST方式的话，格式如下：</p>
+<pre class="line-numbers language-http" data-language="http"><code class="language-http"><span class="token request-line"><span class="token method property">POST</span> <span class="token request-target url">/search</span> <span class="token http-version property">HTTP/1.1</span></span>    
+<span class="token header-name keyword">Accept:</span> image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/vnd.ms-excel, application/vnd.ms-powerpoint,   
+application/msword, application/x-silverlight, application/x-shockwave-flash, */*    
+<span class="token header-name keyword">Referer:</span> &lt;a href="http://www.google.cn/">http://www.google.cn/&lt;/a>    
+<span class="token header-name keyword">Accept-Language:</span> zh-cn    
+<span class="token header-name keyword">Accept-Encoding:</span> gzip, deflate    
+<span class="token header-name keyword">User-Agent:</span> Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; TheWorld)    
+<span class="token header-name keyword">Host:</span> &lt;a href="http://www.google.cn">www.google.cn&lt;/a>    
+<span class="token header-name keyword">Connection:</span> Keep-Alive    
+<span class="token header-name keyword">Cookie:</span> PREF=ID=80a06da87be9ae3c:U=f7167333e2c3b714:NW=1:TM=1261551909:LM=1261551917:S=ybYcq2wpfefs4V9g;   
+NID=31=ojj8d-IygaEtSxLgaJmqSjVhCspkviJrB6omjamNrSm8lZhKy_yMfO2M4QMRKcH1g0iQv9u-2hfBW7bUFwVh7pGaRUb0RnHcJU37y-  
+FxlRugatx63JLv7CWMD6UB_O_r    
+  
+hl=zh-CN&amp;source=hp&amp;q=domety  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-# 国内镜像源：
-
-#中科大
-deb http:&#x2F;&#x2F;mirrors.ustc.edu.cn&#x2F;kali kali-rolling main non-free contrib
-deb-src http:&#x2F;&#x2F;mirrors.ustc.edu.cn&#x2F;kali kali-rolling main non-free contrib
- 
-#阿里云
-deb http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;kali kali-rolling main non-free contrib
-deb-src http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;kali kali-rolling main non-free contrib
- 
-#清华大学
-deb http:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;kali kali-rolling main contrib non-free
-deb-src https:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;kali kali-rolling main contrib non-free
- 
-#浙大
-deb http:&#x2F;&#x2F;mirrors.zju.edu.cn&#x2F;kali kali-rolling main contrib non-free
-deb-src http:&#x2F;&#x2F;mirrors.zju.edu.cn&#x2F;kali kali-rolling main contrib non-free
- 
-#东软大学
-deb http:&#x2F;&#x2F;mirrors.neusoft.edu.cn&#x2F;kali kali-rolling&#x2F;main non-free contrib
-deb-src http:&#x2F;&#x2F;mirrors.neusoft.edu.cn&#x2F;kali kali-rolling&#x2F;main non-free contrib
- 
-#官方源
-deb http:&#x2F;&#x2F;http.kali.org&#x2F;kali kali-rolling main non-free contrib
-deb-src http:&#x2F;&#x2F;http.kali.org&#x2F;kali kali-rolling main non-free contrib
- 
-deb http:&#x2F;&#x2F;mirrors.163.com&#x2F;debian&#x2F; jessie main non-free contrib
-deb http:&#x2F;&#x2F;mirrors.163.com&#x2F;debian&#x2F; jessie-updates main non-free contrib
-deb http:&#x2F;&#x2F;mirrors.163.com&#x2F;debian&#x2F; jessie-backports main non-free contrib
-deb-src http:&#x2F;&#x2F;mirrors.163.com&#x2F;debian&#x2F; jessie main non-free contrib
-deb-src http:&#x2F;&#x2F;mirrors.163.com&#x2F;debian&#x2F; jessie-updates main non-free contrib
-deb-src http:&#x2F;&#x2F;mirrors.163.com&#x2F;debian&#x2F; jessie-backports main non-free contrib
-deb http:&#x2F;&#x2F;mirrors.163.com&#x2F;debian-security&#x2F; jessie&#x2F;updates main non-free contrib
-deb-src http:&#x2F;&#x2F;mirrors.163.com&#x2F;debian-security&#x2F; jessie&#x2F;updates main non-free contrib
-
-
-apt-get update &amp;&amp; apt-get upgrade # 取回更新的软件包列表信息进行一次升级
-apt-get clean # 删除已经下载的安装包
-reboot  #重启<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="设置SSH，使其能够远程连接XShell"><a href="#设置SSH，使其能够远程连接XShell" class="headerlink" title="设置SSH，使其能够远程连接XShell"></a>设置SSH，使其能够远程连接XShell</h3><pre class="line-numbers language-none"><code class="language-none">打开SSH配置文件：
-vim &#x2F;etc&#x2F;ssh&#x2F;sshd_config 
-
-修改两个地方：
-重启SSH服务：&#x2F;etc&#x2F;init.d&#x2F;ssh restart  
-开启ssh服务：service ssh start  
-
-添加开机启动SSH服务：update-rc.d ssh enable
-关闭开机启动SSH服务：update-rc.d ssh disable
-
-XShell传输文件：
-
-rz #Windows向kali传输。要传到哪里先root模式进入当前文件夹，rz选择传输文件  
-rz   -y  # 如果覆盖原文件，执行：  
-sz &#123;文件&#125;  #下载文件，执行；  
-Alt+P #打开属性框。打开【文件传输】，这里可以调整传输的一些属性。下载文件，可以执行下载目录，下载文件时就不会再询问。上传文件，可以直接拖动文件到xshell上传，很方便。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="kali-MySQL数据库配置："><a href="#kali-MySQL数据库配置：" class="headerlink" title="kali - MySQL数据库配置："></a>kali - MySQL数据库配置：</h3><pre class="line-numbers language-none"><code class="language-none">########### kali 是默认安装MySQL的，只是需要我们配置一下：##################
-
-# 启动MySQL：
-service mysql start
-
-# 初始化密码：
-mysql_secure_installation
-
-# 出现这个的时候，一路 Y 就可以了，中途需要设置密码
-
-NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
-      SERVERS IN PRODUCTION USE!  PLEASE READ EACH STEP CAREFULLY!
-
-In order to log into MariaDB to secure it, we&#39;ll need the current
-password for the root user.  If you&#39;ve just installed MariaDB, and
-you haven&#39;t set the root password yet, the password will be blank,
-so you should just press enter here.
-
-Enter current password for root (enter for none): 
-OK, successfully used password, moving on...
-
-Setting the root password ensures that nobody can log into the MariaDB
-root user without the proper authorisation.
-
-You already have a root password set, so you can safely answer &#39;n&#39;.
-
-Change the root password? [Y&#x2F;n] y
-New password: 
-Re-enter new password: 
-Password updated successfully!
-Reloading privilege tables..
- ... Success!
+<h5 id="GET请求和POST请求的区别"><a href="#GET请求和POST请求的区别" class="headerlink" title="GET请求和POST请求的区别"></a>GET请求和POST请求的区别</h5><h6 id="浏览器角度"><a href="#浏览器角度" class="headerlink" title="浏览器角度"></a>浏览器角度</h6><p>​        浏览器限制GET的长度，但是不限制提交的POST长度<br>​        POST的长度取决于服务器端的配置</p>
+<h6 id="数据接收方式"><a href="#数据接收方式" class="headerlink" title="数据接收方式"></a>数据接收方式</h6><p>​        GET是通过浏览器地址栏传递数据，POST是通过浏览器隐式提交数据(刷新页面)</p>
+<h6 id="用途角度"><a href="#用途角度" class="headerlink" title="用途角度"></a>用途角度</h6><p>​        发送登录请求均使用POST<br>​        提交发送搜索请求均使用GET提交</p>
+<h4 id="PUT"><a href="#PUT" class="headerlink" title="PUT"></a>PUT</h4><p>​        PUT 向网页写入文件</p>
+<h4 id="COPY"><a href="#COPY" class="headerlink" title="COPY"></a>COPY</h4><p>​        COPY 复制文件</p>
+<h4 id="DELETE"><a href="#DELETE" class="headerlink" title="DELETE"></a>DELETE</h4><p>​        DELETE 删除</p>
+<h4 id="OPTIONS"><a href="#OPTIONS" class="headerlink" title="OPTIONS"></a>OPTIONS</h4><p>​        OPTIONS 返回请求方式</p>
+<h4 id="解析GET请求"><a href="#解析GET请求" class="headerlink" title="解析GET请求"></a>解析GET请求</h4><pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">GET/HTTP/1.1 -- 请求方式
+Host：stentqh.geithub.io -- 请求地址
+User-Agent:Mozilla/5.0(windows NT 10.0 WOW64; rv:51.0)
+# 请求的设备（返回电脑页面或者手机页面）
+Accept:xml/html text -- 页面上传
+Accept-Language：zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3 
+# 语言 中文、英文
+Accept-Encoding: gzip,deflate -- 传输压缩
+Cookie:code=bd60dd1ee8009d95677xxxx; -- Cookie
+Connection:keep-alive -- Cookie存活多久<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
-By default, a MariaDB installation has an anonymous user, allowing anyone
-to log into MariaDB without having to have a user account created for
-them.  This is intended only for testing, and to make the installation
-go a bit smoother.  You should remove them before moving into a
-production environment.
 
-Remove anonymous users? [Y&#x2F;n] n
- ... skipping.
-
-Normally, root should only be allowed to connect from &#39;localhost&#39;.  This
-ensures that someone cannot guess at the root password from the network.
-
-Disallow root login remotely? [Y&#x2F;n] n
- ... skipping.
-
-By default, MariaDB comes with a database named &#39;test&#39; that anyone can
-access.  This is also intended only for testing, and should be removed
-before moving into a production environment.
-
-Remove test database and access to it? [Y&#x2F;n] n
- ... skipping.
-
-Reloading the privilege tables will ensure that all changes made so far
-will take effect immediately.
-
-Reload privilege tables now? [Y&#x2F;n] y
- ... Success!
-
-Cleaning up...
-
-All done!  If you&#39;ve completed all of the above steps, your MariaDB
-installation should now be secure.
-
-Thanks for using MariaDB!
-
-# 出现上述这个 ：Thanks for using MariaDB! 则说明配置成功！
-
-# 以root用户登录，密码为root（刚才自己设置的！）
-
-mysql -uroot -proot 以root用户登录，密码为root
-
-# 登录成功：
-Welcome to the MariaDB monitor.  Commands end with ; or \g.
-Your MariaDB connection id is 42
-Server version: 10.5.11-MariaDB-1 Debian 11
-
-Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
-
-Type &#39;help;&#39; or &#39;\h&#39; for help. Type &#39;\c&#39; to clear the current input statement.
-
-MariaDB [(none)]&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="拓展：错误总结"><a href="#拓展：错误总结" class="headerlink" title="拓展：错误总结"></a>拓展：错误总结</h3><pre class="line-numbers language-none"><code class="language-none"># 安装Python第三方库：
-以mdeditor举例：先去官网搜索下载命令，然后用pip指令进行下载
-pip install django-mdeditor 
-
-# 部署Gr33kLibrary报错信息处理：
-
-错误一：
-django.core.exceptions.ImproperlyConfigured: mysqlclient 1.3.13 or newer is required; you have 0.9.3.
-
-解决办法：安装pymysql，只需要降低django的版本就可以了
-pip install pymysql
-pip install django&#x3D;&#x3D;2.1.4
-
-错误二：
-django.db.utils.InternalError: (1698, &quot;Access denied for user &#39;root&#39;@&#39;localhost&#39;&quot;)
-解决方法：先某度
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="kali-tools-工具列表："><a href="#kali-tools-工具列表：" class="headerlink" title="kali tools 工具列表："></a>kali tools 工具列表：</h2><ul>
-<li>kali tools 工具列表</li>
-<li>enum4 linux  ：用于检索windos 和 Samba 主机中的数据。</li>
-<li>haping3 ：</li>
-<li>masscan ：世界上最快的端口扫描工具、先用masscan 扫描资产、再用namp细扫。</li>
-<li>nikto ：web服务器扫描工具、速度极快、类似于网络爬虫进行fuzz。可以通过wirshark 进行追踪数据流分析。</li>
-<li>nmap：可以用来爆破、fuzz等</li>
-<li>Sublist3r ：子域名枚举工具、需要链接外网Google的、新版kali目前不预装、可以自行下载、</li>
-<li>exploitdb ：可以去查询POC</li>
-<li>linux exploit Suggester ：GitHub可以进行搜索</li>
-<li>beef ：XSS的利用工具</li>
-<li>Armitage ：后渗透工具、msf图形化工具。适合小白学习使用</li>
-<li>backdoor- factory（ka1i自带不好用）</li>
-<li>routersploit：类似msf、网络服务基本的msf框架、针对路由器、防护墙的</li>
-<li>msf</li>
-<li>setoolkit：社会工程学框架、非常屌丝、社会工程学欺骗手段、也可以拿shell。不预装。</li>
-<li>sqlmap：</li>
-<li>Burp Suite</li>
-<li>WPScan：</li>
-<li>wfuzz：神器结合好的字典、能fuzz一切。fuzz 就是模糊测试就是蒙！</li>
-<li>websploit：中间人的框架、不预装</li>
-<li>owasp zap</li>
-<li>w3af</li>
-<li>Gobuster</li>
-<li>recon-ng：研究研究其实很不错、信息搜集框架</li>
-<li>netdiscover ：查网络的</li>
-<li>shodan</li>
-<li>what cms ：查网站指纹信息的</li>
-<li>DIRB：目录扫描工具、类似于御剑。</li>
-<li>curl：这也是个神器、需要详细了解、最简单的web poc 工具。没有之一。</li>
-<li>John the Ripper ：破解密码的</li>
-<li>wordlists：字典</li>
-<li>Nishang</li>
-<li>dntcp</li>
-<li>Webshells ：构建webshell工具。</li>
-<li>Hydra：爆破工具</li>
-<li>apktool ：APK工具</li>
-<li>impackt</li>
-<li>locate ：</li>
+<h2 id="常见的HTTP状态码"><a href="#常见的HTTP状态码" class="headerlink" title="常见的HTTP状态码"></a>常见的HTTP状态码</h2><p>​        当浏览者访问一个网页时，浏览者的浏览器会向网页所在服务器发出请求。当浏览器接收并显示网页前，此网页所在的服务器会返回一个包含HTTP状态码的信息头（server header）用以响应浏览器的请求。<br>HTTP状态码的英文为HTTP Status Code。状态代码由三位数字组成，第一个数字定义了响应的类别，且有五种可能取值。</p>
+<ul>
+<li>1xx：指示信息–表示请求已接收，继续处理。</li>
+<li>2xx：成功–表示请求已被成功接收、理解、接受。</li>
+<li>3xx：重定向–要完成请求必须进行更进一步的操作。</li>
+<li>4xx：客户端错误–请求有语法错误或请求无法实现。</li>
+<li>5xx：服务器端错误–服务器未能实现合法的请求。</li>
+</ul>
+<h3 id="常见状态代码、状态描述的说明"><a href="#常见状态代码、状态描述的说明" class="headerlink" title="常见状态代码、状态描述的说明"></a>常见状态代码、状态描述的说明</h3><ul>
+<li>200 OK：客户端请求成功。</li>
+<li>400 Bad Request：客户端请求有语法错误，不能被服务器所理解。</li>
+<li>401 Unauthorized：请求未经授权，这个状态代码必须和WWW-Authenticate报头域一起使用。</li>
+<li>403 Forbidden：服务器收到请求，但是拒绝提供服务。</li>
+<li>404 Not Found：请求资源不存在，举个例子：输入了错误的URL。</li>
+<li>500 Internal Server Error：服务器发生不可预期的错误。</li>
+<li>503 Server Unavailable：服务器当前不能处理客户端的请求，一段时间后可能恢复正常，举个例子：HTTP/1.1 200 OK（CRLF）。</li>
 </ul>
 
                 
@@ -688,7 +549,7 @@ django.db.utils.InternalError: (1698, &quot;Access denied for user &#39;root&#39
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://stentqh.github.io/2021/09/30/kali%E9%85%8D%E7%BD%AE/">http://stentqh.github.io/2021/09/30/kali%E9%85%8D%E7%BD%AE/</a>
+                    <a href="http://stentqh.github.io/2021/09/30/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%20%E4%B8%80/">http://stentqh.github.io/2021/09/30/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%20%E4%B8%80/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -726,8 +587,8 @@ django.db.utils.InternalError: (1698, &quot;Access denied for user &#39;root&#39
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/kali/">
-                                    <span class="chip bg-color">kali</span>
+                                <a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
+                                    <span class="chip bg-color">基础知识</span>
                                 </a>
                             
                         </div>
@@ -1043,6 +904,55 @@ django.db.utils.InternalError: (1698, &quot;Access denied for user &#39;root&#39
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
+                <a href="/2021/09/30/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%20%E4%BA%8C/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="基础知识 二">
+                        
+                        <span class="card-title">基础知识 二</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            基础知识
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-30
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="post-category">
+                                    基础知识
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
+                        <span class="chip bg-color">基础知识</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
                 <a href="/2021/09/30/SQL/">
                     <div class="card-image">
                         
@@ -1059,9 +969,9 @@ django.db.utils.InternalError: (1698, &quot;Access denied for user &#39;root&#39
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1079,56 +989,6 @@ django.db.utils.InternalError: (1698, &quot;Access denied for user &#39;root&#39
                     
                     <a href="/tags/SQL/">
                         <span class="chip bg-color">SQL</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/09/30/kali%E9%85%8D%E7%BD%AE/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="kali配置">
-                        
-                        <span class="card-title">kali配置</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-30
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/kali/" class="post-category">
-                                    kali
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/kali/">
-                        <span class="chip bg-color">kali</span>
                     </a>
                     
                 </div>

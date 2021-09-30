@@ -6,7 +6,7 @@
   <link href="http://stentqh.github.io/atom.xml" rel="self"/>
   
   <link href="http://stentqh.github.io/"/>
-  <updated>2021-09-29T17:03:40.508Z</updated>
+  <updated>2021-09-30T14:37:10.068Z</updated>
   <id>http://stentqh.github.io/</id>
   
   <author>
@@ -17,11 +17,63 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>基础知识 二</title>
+    <link href="http://stentqh.github.io/2021/09/30/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%20%E4%BA%8C/"/>
+    <id>http://stentqh.github.io/2021/09/30/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%20%E4%BA%8C/</id>
+    <published>2021-09-30T14:31:51.000Z</published>
+    <updated>2021-09-30T14:37:10.068Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;基础知识-二&quot;&gt;&lt;a href=&quot;#基础知识-二&quot; class=&quot;headerlink&quot; title=&quot;基础知识  二&quot;&gt;&lt;/a&gt;基础知识  二&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;1-网络思维模型&quot;&gt;&lt;a href=&quot;#1-网络思维模型&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="基础知识" scheme="http://stentqh.github.io/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="基础知识" scheme="http://stentqh.github.io/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基础知识 一</title>
+    <link href="http://stentqh.github.io/2021/09/30/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%20%E4%B8%80/"/>
+    <id>http://stentqh.github.io/2021/09/30/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%20%E4%B8%80/</id>
+    <published>2021-09-30T14:31:46.000Z</published>
+    <updated>2021-09-30T14:39:11.996Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;基础知识-一&quot;&gt;&lt;a href=&quot;#基础知识-一&quot; class=&quot;headerlink&quot; title=&quot;基础知识 一&quot;&gt;&lt;/a&gt;基础知识 一&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;什么是HTTP请求&quot;&gt;&lt;a href=&quot;#什么是HTTP请求&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="基础知识" scheme="http://stentqh.github.io/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="基础知识" scheme="http://stentqh.github.io/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
     <title>SQL 笔记</title>
     <link href="http://stentqh.github.io/2021/09/30/SQL/"/>
     <id>http://stentqh.github.io/2021/09/30/SQL/</id>
     <published>2021-09-29T17:02:48.000Z</published>
-    <updated>2021-09-29T17:03:40.508Z</updated>
+    <updated>2021-09-30T14:35:36.370Z</updated>
     
     
       
