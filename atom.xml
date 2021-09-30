@@ -6,7 +6,7 @@
   <link href="http://stentqh.github.io/atom.xml" rel="self"/>
   
   <link href="http://stentqh.github.io/"/>
-  <updated>2021-09-30T14:37:10.068Z</updated>
+  <updated>2021-09-30T21:06:18.321Z</updated>
   <id>http://stentqh.github.io/</id>
   
   <author>
@@ -17,63 +17,61 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>基础知识 二</title>
-    <link href="http://stentqh.github.io/2021/09/30/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%20%E4%BA%8C/"/>
-    <id>http://stentqh.github.io/2021/09/30/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%20%E4%BA%8C/</id>
+    <title>计算机网络笔记</title>
+    <link href="http://stentqh.github.io/2021/09/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0/"/>
+    <id>http://stentqh.github.io/2021/09/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0/</id>
     <published>2021-09-30T14:31:51.000Z</published>
-    <updated>2021-09-30T14:37:10.068Z</updated>
+    <updated>2021-09-30T21:06:18.321Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;基础知识-二&quot;&gt;&lt;a href=&quot;#基础知识-二&quot; class=&quot;headerlink&quot; title=&quot;基础知识  二&quot;&gt;&lt;/a&gt;基础知识  二&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;1-网络思维模型&quot;&gt;&lt;a href=&quot;#1-网络思维模型&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;1-网络思维模型&quot;&gt;&lt;a href=&quot;#1-网络思维模型&quot; class=&quot;headerlink&quot; title=&quot;1. 网络思维模型&quot;&gt;&lt;/a&gt;1. 网络思维模型&lt;/h2&gt;&lt;h3 id=&quot;架构-（CS-BS）&quot;&gt;&lt;a href=&quot;#架构-（CS-BS）&quot;</summary>
         
       
     
     
     
-    <category term="基础知识" scheme="http://stentqh.github.io/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <category term="计算机基础" scheme="http://stentqh.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
     
     
-    <category term="基础知识" scheme="http://stentqh.github.io/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <category term="计算机网络" scheme="http://stentqh.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
   <entry>
-    <title>基础知识 一</title>
-    <link href="http://stentqh.github.io/2021/09/30/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%20%E4%B8%80/"/>
-    <id>http://stentqh.github.io/2021/09/30/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%20%E4%B8%80/</id>
+    <title>HTTP协议笔记</title>
+    <link href="http://stentqh.github.io/2021/09/30/HTTP%E5%8D%8F%E8%AE%AE%E7%AC%94%E8%AE%B0/"/>
+    <id>http://stentqh.github.io/2021/09/30/HTTP%E5%8D%8F%E8%AE%AE%E7%AC%94%E8%AE%B0/</id>
     <published>2021-09-30T14:31:46.000Z</published>
-    <updated>2021-09-30T14:39:11.996Z</updated>
+    <updated>2021-09-30T21:06:25.408Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;基础知识-一&quot;&gt;&lt;a href=&quot;#基础知识-一&quot; class=&quot;headerlink&quot; title=&quot;基础知识 一&quot;&gt;&lt;/a&gt;基础知识 一&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;什么是HTTP请求&quot;&gt;&lt;a href=&quot;#什么是HTTP请求&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;什么是HTTP请求&quot;&gt;&lt;a href=&quot;#什么是HTTP请求&quot; class=&quot;headerlink&quot; title=&quot;什么是HTTP请求&quot;&gt;&lt;/a&gt;什么是HTTP请求&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-txt&quot;</summary>
         
       
     
     
     
-    <category term="基础知识" scheme="http://stentqh.github.io/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <category term="计算机基础" scheme="http://stentqh.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
     
     
-    <category term="基础知识" scheme="http://stentqh.github.io/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <category term="HTTP协议" scheme="http://stentqh.github.io/tags/HTTP%E5%8D%8F%E8%AE%AE/"/>
     
   </entry>
   
   <entry>
-    <title>SQL 笔记</title>
-    <link href="http://stentqh.github.io/2021/09/30/SQL/"/>
-    <id>http://stentqh.github.io/2021/09/30/SQL/</id>
+    <title>SQL注入笔记</title>
+    <link href="http://stentqh.github.io/2021/09/30/SQL%E6%B3%A8%E5%85%A5%E7%AC%94%E8%AE%B0/"/>
+    <id>http://stentqh.github.io/2021/09/30/SQL%E6%B3%A8%E5%85%A5%E7%AC%94%E8%AE%B0/</id>
     <published>2021-09-29T17:02:48.000Z</published>
-    <updated>2021-09-30T14:35:36.370Z</updated>
+    <updated>2021-09-30T21:11:07.225Z</updated>
     
     
       
@@ -86,10 +84,10 @@
     
     
     
-    <category term="SQL" scheme="http://stentqh.github.io/categories/SQL/"/>
+    <category term="Web安全" scheme="http://stentqh.github.io/categories/Web%E5%AE%89%E5%85%A8/"/>
     
     
-    <category term="SQL" scheme="http://stentqh.github.io/tags/SQL/"/>
+    <category term="SQL注入" scheme="http://stentqh.github.io/tags/SQL%E6%B3%A8%E5%85%A5/"/>
     
   </entry>
   
@@ -98,24 +96,25 @@
     <link href="http://stentqh.github.io/2021/09/30/kali%E9%85%8D%E7%BD%AE/"/>
     <id>http://stentqh.github.io/2021/09/30/kali%E9%85%8D%E7%BD%AE/</id>
     <published>2021-09-29T16:54:01.000Z</published>
-    <updated>2021-09-29T17:00:56.387Z</updated>
+    <updated>2021-09-30T21:24:13.609Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;kali-配置&quot;&gt;&lt;a href=&quot;#kali-配置&quot; class=&quot;headerlink&quot; title=&quot;kali 配置&quot;&gt;&lt;/a&gt;kali 配置&lt;/h1&gt;&lt;hr&gt;
-&lt;h3 id=&quot;新-kali-配置&quot;&gt;&lt;a href=&quot;#新-kali-配置&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;新-kali-配置&quot;&gt;&lt;a href=&quot;#新-kali-配置&quot; class=&quot;headerlink&quot; title=&quot;新 kali 配置&quot;&gt;&lt;/a&gt;新 kali 配置&lt;/h3&gt;&lt;pre class=&quot;line-numbers</summary>
         
       
     
     
     
-    <category term="kali" scheme="http://stentqh.github.io/categories/kali/"/>
+    <category term="Web安全" scheme="http://stentqh.github.io/categories/Web%E5%AE%89%E5%85%A8/"/>
     
     
     <category term="kali" scheme="http://stentqh.github.io/tags/kali/"/>
+    
+    <category term="配置" scheme="http://stentqh.github.io/tags/%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="标签, Niko blog">
+    <meta name="keywords" content="计算机网络笔记, Niko blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>标签 | Niko blog</title>
+    <title>计算机网络笔记 | Niko blog</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -261,12 +261,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">tags</h1>
+                    <h1 class="description center-align post-title">计算机网络笔记</h1>
                 </div>
             </div>
         </div>
@@ -380,12 +380,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                                <span class="chip bg-color">计算机网络</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" class="post-category">
+                                计算机基础
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -394,28 +407,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-09-29
+                    2021-09-30
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-09-29
+                    2021-10-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    602
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -438,7 +451,72 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h2 id="1-网络思维模型"><a href="#1-网络思维模型" class="headerlink" title="1. 网络思维模型"></a>1. 网络思维模型</h2><h3 id="架构-（CS-BS）"><a href="#架构-（CS-BS）" class="headerlink" title="架构 （CS / BS）"></a>架构 （CS / BS）</h3><p>CS  (Client  Server)</p>
+<p>BS  (Browser  Server)</p>
+<h4 id="技术架构-CS"><a href="#技术架构-CS" class="headerlink" title="技术架构 CS"></a>技术架构 CS</h4><p>​        Clinent 指的是客户端远方的服务器指的是Server （C就是客户端 / S就是服务端）可以这么简单的去理解</p>
+<h4 id="技术架构-BS"><a href="#技术架构-BS" class="headerlink" title="技术架构 BS"></a>技术架构 BS</h4><p>​        浏览器访问服务器端统称为 BS 架构 也就是某些客户端采用了Web接口 举个例子就相当于是火狐浏览器访问网站; 浏览网站先请求 后响应 </p>
+<h4 id="HTTP协议的交互过程"><a href="#HTTP协议的交互过程" class="headerlink" title="HTTP协议的交互过程"></a>HTTP协议的交互过程</h4><p>​        客户端 请求 服务端 端口请求 </p>
+<p>​        四步请求（建立链接 请求链接 响应链接 关闭链接 ）</p>
+<h4 id="什么是-HTTP-协议"><a href="#什么是-HTTP-协议" class="headerlink" title="什么是 HTTP 协议"></a>什么是 HTTP 协议</h4><table>
+<thead>
+<tr>
+<th align="center">分层理解-Layered</th>
+<th align="center">层级描述-Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">静态层</td>
+<td align="center">Javascrip、html</td>
+</tr>
+<tr>
+<td align="center">脚本层</td>
+<td align="center">PHP、ASPX、ASP、JSP</td>
+</tr>
+<tr>
+<td align="center">数据层</td>
+<td align="center">MySQL、Oracle、Access、SQL Server、Postgresql……</td>
+</tr>
+<tr>
+<td align="center">服务层</td>
+<td align="center">Nginx、Apache、IIS</td>
+</tr>
+<tr>
+<td align="center">系统层</td>
+<td align="center">Windows、Linux</td>
+</tr>
+</tbody></table>
+<h2 id="2-局域网的简单通信"><a href="#2-局域网的简单通信" class="headerlink" title="2. 局域网的简单通信"></a>2. 局域网的简单通信</h2><p>​         一般局域网都通过交换机/路由通信，古老的网络中大部分都使用HUB(集线器)其缺点就是主机发送的每一个数据包，都会被其他主机接收到，这个过程叫泛洪。<br>​        在此基础上，交换机保留了集线器的功能，进行更安全的功能开发，那就是通过MAC地址表进行数据调整转发。<br>​        交换机中的主机通信过程 :<br>​        ARP广播<br>​        接收响应<br>        发送数据  ==&gt; 交换机转发并且记录 MAC地址，如果MAC地址表被填满，将会泛洪(ARP毒化)。<br>​        ARP欺骗 ==&gt; 回应每一个请求。</p>
+<h2 id="3-OSI七层模型"><a href="#3-OSI七层模型" class="headerlink" title="3. OSI七层模型"></a>3. OSI七层模型</h2><p>​        国际标准化组织(ISO)和国际电报电话咨询委员会(CCITT)联合制定的开放系统互连参考模型，为开放式互连信息系统提供了一种功能结构的框架。它从低到高分别是:物理层、数据链路层、网络层、传输层、会话层、表示层和应用层。</p>
+<h3 id="层级对应协议："><a href="#层级对应协议：" class="headerlink" title="层级对应协议："></a>层级对应协议：</h3><table>
+<thead>
+<tr>
+<th align="left">OSI七层架构模型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">7. 应用层 - 我们的HTTP协议、DNS</td>
+</tr>
+<tr>
+<td align="left">6. 表示层 - 进行数据编码、解码</td>
+</tr>
+<tr>
+<td align="left">5. 会话层 - 建立通信连接 (ADSL拨号)</td>
+</tr>
+<tr>
+<td align="left">4. 传输层 - TCP/IP协议控制数据传输</td>
+</tr>
+<tr>
+<td align="left">3. 网络层 - 路由转发  (IP)</td>
+</tr>
+<tr>
+<td align="left">2. 数据链路层 - 交换机物理寻址 (MAC)</td>
+</tr>
+<tr>
+<td align="left">1. 物理层 - 网卡比特流 (bit)</td>
+</tr>
+</tbody></table>
+<h2 id="4-自身安全"><a href="#4-自身安全" class="headerlink" title="4. 自身安全"></a>4. 自身安全</h2><p>   <strong>切莫与国法硬碰硬 谨遵网络安全法</strong></p>
+
                 
             </div>
             <hr/>
@@ -464,7 +542,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://stentqh.github.io/tags/tags.html">http://stentqh.github.io/tags/tags.html</a>
+                    <a href="http://stentqh.github.io/2021/09/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0/">http://stentqh.github.io/2021/09/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -501,7 +579,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                                    <span class="chip bg-color">计算机网络</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -816,13 +898,13 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/tags/tags.html">
+                <a href="/2021/09/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="tags">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="计算机网络笔记">
                         
-                        <span class="card-title">tags</span>
+                        <span class="card-title">计算机网络笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -833,17 +915,29 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-29
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-30
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Niko
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    计算机基础
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                        <span class="chip bg-color">计算机网络</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -851,37 +945,48 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/tags/tags.html">
+                <a href="/2021/09/30/HTTP%E5%8D%8F%E8%AE%AE%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="tags">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="HTTP协议笔记">
                         
-                        <span class="card-title">tags</span>
+                        <span class="card-title">HTTP协议笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            有关HTTP协议的知识
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-29
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-30
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Niko
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    计算机基础
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/HTTP%E5%8D%8F%E8%AE%AE/">
+                        <span class="chip bg-color">HTTP协议</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
