@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="文件上传绕过, Niko blog">
+    <meta name="keywords" content="攻防世界PHP2笔记, Niko blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>文件上传绕过 | Niko blog</title>
+    <title>攻防世界PHP2笔记 | Niko blog</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -261,12 +261,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">文件上传绕过</h1>
+                    <h1 class="description center-align post-title">攻防世界PHP2笔记</h1>
                 </div>
             </div>
         </div>
@@ -382,8 +382,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%BB%95%E8%BF%87/">
-                                <span class="chip bg-color">文件上传绕过</span>
+                            <a href="/tags/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8C/">
+                                <span class="chip bg-color">攻防世界</span>
+                            </a>
+                        
+                            <a href="/tags/CTF/">
+                                <span class="chip bg-color">CTF</span>
                             </a>
                         
                     </div>
@@ -394,8 +398,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Web%E5%AE%89%E5%85%A8/" class="post-category">
-                                Web安全
+                            <a href="/categories/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8CCTF/" class="post-category">
+                                攻防世界CTF
                             </a>
                         
                     </div>
@@ -407,21 +411,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-10-11
+                    2021-10-15
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-10-11
+                    2021-10-15
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    423
+                    160
                 </div>
                 
 
@@ -451,35 +455,19 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="文件上传绕过笔记"><a href="#文件上传绕过笔记" class="headerlink" title="文件上传绕过笔记"></a>文件上传绕过笔记</h2><h3 id="什么是文件上传漏洞？"><a href="#什么是文件上传漏洞？" class="headerlink" title="什么是文件上传漏洞？"></a>什么是文件上传漏洞？</h3><pre class="line-numbers language-none"><code class="language-none">文件上传漏洞是指由于程序员在对用户文件上传部分的控制不足或者处理缺陷，而导致的用户可以越过其本身权限向服务器上上传可执行的动态脚本文件。这里上传的文件可以是木马，病毒，恶意脚本或者WebShell等。这种攻击方式是最为直接和有效的，“文件上传”本身没有问题，有问题的是文件上传后，服务器怎么处理、解释文件。如果服务器的处理逻辑做的不够安全，则会导致严重的后果。
-文件上传漏洞本身就是一个危害巨大的漏洞，WebShell更是将这种漏洞的利用无限扩大。大多数的上传漏洞被利用后攻击者都会留下WebShell以方便后续进入系统。攻击者在受影响系统放置或者插入WebShell后，可通过该WebShell更轻松，更隐蔽的在服务中为所欲为。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+                <h2 id="攻防世界PHP2"><a href="#攻防世界PHP2" class="headerlink" title="攻防世界PHP2"></a>攻防世界PHP2</h2><p>睡了一觉起来继续做昨晚的CTF 打开网页我傻了，本题用时: 15时17分57秒寻思了半天应该是我没关网页</p>
+<p><img src="https://gitee.com/stentqh/images/raw/main/hexo/1634310299(1).jpg"></p>
+<p>题目是PHP2 进入场景给出了一句话</p>
+<p><img src="https://gitee.com/stentqh/images/raw/main/hexo/q.jpg">Can you anthenticate to this website? </p>
+<p><img src="https://gitee.com/stentqh/images/raw/main/hexo/1634310463(1).jpg">看眼源代码还是这个</p>
+<p>在看眼URL+/index.php</p>
+<p><img src="https://gitee.com/stentqh/images/raw/main/hexo/1.jpg">还是不行,在看看题目PHP2 嗯 很可疑试一下index.phps</p>
+<p><img src="https://gitee.com/stentqh/images/raw/main/hexo/1634310322(1).jpg">可以拿到了源码，在试一下?id=amdin</p>
+<p><img src="https://gitee.com/stentqh/images/raw/main/hexo/1634310587(1).jpg"></p>
+<p>在试一下不得行，试了一下URL编码一次%61%64%6d%69%6e会转义admin再试一下双写%25%36%31%25%36%34%25%36%64%25%36%39%25%36%65</p>
+<p><img src="https://gitee.com/stentqh/images/raw/main/hexo/1634310804(1).jpg"></p>
+<p>ok拿到flag</p>
 
-<h3 id="常规绕过"><a href="#常规绕过" class="headerlink" title="常规绕过"></a>常规绕过</h3><pre class="line-numbers language-none"><code class="language-none">.php3 .php4 .php5 .php6 .php7 .phps .phpt .phtml
-&#x2F;&#x2F;都可以当作php去执行<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<h3 id="大小写绕过"><a href="#大小写绕过" class="headerlink" title="大小写绕过"></a>大小写绕过</h3><pre class="line-numbers language-none"><code class="language-none">.PHP .PHPTML ......等等<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="双写绕过"><a href="#双写绕过" class="headerlink" title="双写绕过"></a>双写绕过</h3><pre class="line-numbers language-none"><code class="language-none">pphphp 
-&#x2F;&#x2F;后端会删除一个php<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<h3 id="前端验证绕过"><a href="#前端验证绕过" class="headerlink" title="前端验证绕过"></a>前端验证绕过</h3><pre class="line-numbers language-none"><code class="language-none">file.jpg -&gt; file.php
-&#x2F;&#x2F;bp抓包更改<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<h3 id="htaccess绕过"><a href="#htaccess绕过" class="headerlink" title=".htaccess绕过"></a>.htaccess绕过</h3><pre class="line-numbers language-none"><code class="language-none">.htaccess
-&lt;FilesMatch &quot;shell.jpg&quot;&gt;
-  SetHandler application&#x2F;x-httpd-php
-&lt;&#x2F;FilesMatch&gt;
-&#x2F;&#x2F;上传两个文件，把jpg当成php去执行
-shell.jpg -&gt; 一句话<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="文件执行绕过"><a href="#文件执行绕过" class="headerlink" title="文件执行绕过"></a>文件执行绕过</h3><pre class="line-numbers language-none"><code class="language-none">file.jpg &#x3D;&gt; JPG
-shell
-&#x2F;&#x2F;和.htaccess组合拳
-?file&#x3D;file.jpg<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="截断绕过"><a href="#截断绕过" class="headerlink" title="截断绕过"></a>截断绕过</h3><pre class="line-numbers language-none"><code class="language-none">shell.php%00.jpg<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="欢迎各位在补充其他"><a href="#欢迎各位在补充其他" class="headerlink" title="欢迎各位在补充其他"></a>欢迎各位在补充其他</h3>
                 
             </div>
             <hr/>
@@ -505,7 +493,7 @@ shell
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://stentqh.github.io/2021/10/11/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%BB%95%E8%BF%87/">http://stentqh.github.io/2021/10/11/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%BB%95%E8%BF%87/</a>
+                    <a href="http://stentqh.github.io/2021/10/15/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8CPHP2%E7%AC%94%E8%AE%B0/">http://stentqh.github.io/2021/10/15/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8CPHP2%E7%AC%94%E8%AE%B0/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -543,8 +531,12 @@ shell
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%BB%95%E8%BF%87/">
-                                    <span class="chip bg-color">文件上传绕过</span>
+                                <a href="/tags/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8C/">
+                                    <span class="chip bg-color">攻防世界</span>
+                                </a>
+                            
+                                <a href="/tags/CTF/">
+                                    <span class="chip bg-color">CTF</span>
                                 </a>
                             
                         </div>
@@ -856,17 +848,18 @@ shell
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/10/11/%E8%AE%B0%E4%B8%80%E6%AC%A1pikachu%E9%9D%B6%E5%9C%BA%E7%9A%84csrf%E6%BC%8F%E6%B4%9E/">
+                <a href="/2021/10/15/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8CPHP2%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="记一次pikachu靶场的csrf漏洞">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="攻防世界PHP2笔记">
                         
-                        <span class="card-title">记一次pikachu靶场的csrf漏洞</span>
+                        <span class="card-title">攻防世界PHP2笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -876,30 +869,31 @@ shell
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/pikachu%E9%9D%B6%E5%9C%BA/" class="post-category">
-                                    pikachu靶场
+                            <a href="/categories/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8CCTF/" class="post-category">
+                                    攻防世界CTF
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/pikachu/">
-                        <span class="chip bg-color">pikachu</span>
+                    <a href="/tags/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8C/">
+                        <span class="chip bg-color">攻防世界</span>
                     </a>
                     
-                    <a href="/tags/%E9%9D%B6%E5%9C%BA/">
-                        <span class="chip bg-color">靶场</span>
+                    <a href="/tags/CTF/">
+                        <span class="chip bg-color">CTF</span>
                     </a>
                     
                 </div>
@@ -913,31 +907,31 @@ shell
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/09/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0/">
+                <a href="/2021/10/14/%E5%B1%80%E5%9F%9F%E7%BD%91%E4%BB%8B%E7%BB%8D/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="计算机网络笔记">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="局域网介绍">
                         
-                        <span class="card-title">计算机网络笔记</span>
+                        <span class="card-title">局域网介绍</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            了解一些支持专用网络的技术和设计
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-30
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-14
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" class="post-category">
-                                    计算机基础
+                            <a href="/categories/%E5%B1%80%E5%9F%9F%E7%BD%91%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    局域网基础
                                 </a>
                             
                             
@@ -947,8 +941,8 @@ shell
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
-                        <span class="chip bg-color">计算机网络</span>
+                    <a href="/tags/%E4%BA%92%E8%81%94%E7%BD%91%E5%9F%BA%E7%A1%80/">
+                        <span class="chip bg-color">互联网基础</span>
                     </a>
                     
                 </div>

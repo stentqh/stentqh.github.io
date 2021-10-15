@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>攻防世界PHP2笔记</title>
+      <link href="/2021/10/15/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8CPHP2%E7%AC%94%E8%AE%B0/"/>
+      <url>/2021/10/15/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8CPHP2%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="攻防世界PHP2"><a href="#攻防世界PHP2" class="headerlink" title="攻防世界PHP2"></a>攻防世界PHP2</h2><p>睡了一觉起来继续做昨晚的CTF 打开网页我傻了，本题用时: 15时17分57秒寻思了半天应该是我没关网页</p><p><img src="https://gitee.com/stentqh/images/raw/main/hexo/1634310299(1).jpg"></p><p>题目是PHP2 进入场景给出了一句话</p><p><img src="https://gitee.com/stentqh/images/raw/main/hexo/q.jpg">Can you anthenticate to this website? </p><p><img src="https://gitee.com/stentqh/images/raw/main/hexo/1634310463(1).jpg">看眼源代码还是这个</p><p>在看眼URL+/index.php</p><p><img src="https://gitee.com/stentqh/images/raw/main/hexo/1.jpg">还是不行,在看看题目PHP2 嗯 很可疑试一下index.phps</p><p><img src="https://gitee.com/stentqh/images/raw/main/hexo/1634310322(1).jpg">可以拿到了源码，在试一下?id=amdin</p><p><img src="https://gitee.com/stentqh/images/raw/main/hexo/1634310587(1).jpg"></p><p>在试一下不得行，试了一下URL编码一次%61%64%6d%69%6e会转义admin再试一下双写%25%36%31%25%36%34%25%36%64%25%36%39%25%36%65</p><p><img src="https://gitee.com/stentqh/images/raw/main/hexo/1634310804(1).jpg"></p><p>ok拿到flag</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 攻防世界CTF </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 攻防世界 </tag>
+            
+            <tag> CTF </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>局域网介绍</title>
       <link href="/2021/10/14/%E5%B1%80%E5%9F%9F%E7%BD%91%E4%BB%8B%E7%BB%8D/"/>
       <url>/2021/10/14/%E5%B1%80%E5%9F%9F%E7%BD%91%E4%BB%8B%E7%BB%8D/</url>
@@ -38,16 +65,16 @@
       
       <categories>
           
-          <category> 靶场 </category>
+          <category> pikachu靶场 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> csrf </tag>
-            
             <tag> pikachu </tag>
+            
+            <tag> 靶场 </tag>
             
         </tags>
       
