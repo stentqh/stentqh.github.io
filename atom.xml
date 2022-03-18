@@ -6,7 +6,7 @@
   <link href="http://stentqh.github.io/atom.xml" rel="self"/>
   
   <link href="http://stentqh.github.io/"/>
-  <updated>2021-10-15T15:19:47.267Z</updated>
+  <updated>2022-03-18T06:09:44.687Z</updated>
   <id>http://stentqh.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>XSS</title>
+    <link href="http://stentqh.github.io/2022/03/18/XSS/"/>
+    <id>http://stentqh.github.io/2022/03/18/XSS/</id>
+    <published>2022-03-18T06:02:50.000Z</published>
+    <updated>2022-03-18T06:09:44.687Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-XSS介绍&quot;&gt;&lt;a href=&quot;#1-XSS介绍&quot; class=&quot;headerlink&quot; title=&quot;1. XSS介绍&quot;&gt;&lt;/a&gt;1. XSS介绍&lt;/h2&gt;&lt;p&gt;​        跨站脚本攻击(Cross Site</summary>
+        
+      
+    
+    
+    
+    <category term="Web安全" scheme="http://stentqh.github.io/categories/Web%E5%AE%89%E5%85%A8/"/>
+    
+    
+    <category term="XSS的芝士" scheme="http://stentqh.github.io/tags/XSS%E7%9A%84%E8%8A%9D%E5%A3%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>攻防世界PHP2笔记</title>
