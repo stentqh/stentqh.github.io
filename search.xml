@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>git不到github的方法</title>
+      <link href="/2022/03/18/git%E4%B8%8D%E5%88%B0github%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+      <url>/2022/03/18/git%E4%B8%8D%E5%88%B0github%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<p>  猛然间想起来我还有个博客 从去新疆之后好像就没更新过 今天打算更新下我的博客 遇到了一些问题 文章写好了 嗯 打开了我的bash 一套操作猛如虎 就遇到了On branch master nothing to commit (working directory clean)  </p><p>  开始对谷歌狂轰乱炸 重置了本机用户名和邮箱，重新生成公钥，失败</p><p>  看到有人说本地邮箱和生成公钥邮箱必须一致，必须是GitHub登陆的邮箱，于是我又统一了一下了GitHub和本机的邮箱，失败</p><p>  然后看到有大神说是本机dns的问题，按照大神的办法，解决。</p><pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">1.首先你需要打开命令台，测试一下看是不是连接不上：  ping github.com  如果显示连接失败，那就往下看2.打开C:\Windows\System32\drivers\etc\hosts  在文件内底部写入以下两个地址  192.30.255.112 github.com git  185.31.16.184 github.global.ssl.fastly.net 3.再到命令台测试一下，如果成功则可以正常使用git了；<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> GitHub </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> gitbuh的问题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>XSS</title>
       <link href="/2022/03/18/XSS/"/>
       <url>/2022/03/18/XSS/</url>
